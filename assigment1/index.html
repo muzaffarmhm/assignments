@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+   </head>
+   <body>
+      <h1>Display Details</h1>
+      <!-- <label for="sortby">Display details:</label> -->
+      <div>
+         <select name="sortby" id="sortby">
+            <option value="inbetween">In-Between</option>
+            <option value="yesterday">Yesterday</option>
+            <option value="week">Last Week</option>
+            <option value="month">Last Month</option>
+         </select>
+         <br>
+         <br>
+      </div>
+      <label for="start">Start Date</label>
+      <input type="date" name="start" id="start">
+      <br>
+      <br>
+      <label for="end">End Date</label>
+      <input type="date" name="end" id="end">
+      <br>
+      <br>
+      <button id="sort">Sort</button>
+      <br>
+      <br>
+      <div id="details">
+         <ul id="list">
+         </ul>
+      </div>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="index.js"></script>
+   </body>
+</html>
