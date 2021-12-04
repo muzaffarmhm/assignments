@@ -23,6 +23,7 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log(error);
   } else {
     console.log('Email sent: ' + info.response);
+    console.log('Link: ' + nodemailer.getTestMessageUrl(info));
   }
 });
 }
